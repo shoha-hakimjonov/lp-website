@@ -13,7 +13,7 @@
       font-family: 'Cabin';
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-      font-size: 17px;
+      font-size: 15px;
       padding-left: 27px;
       padding-right: 27px;
       color: black;
@@ -23,13 +23,13 @@
       padding-right: 30px;
       padding-top: 12px;
       padding-bottom: 12px;
-      color: #673AB7;
-      border-color: #673AB7;
+      color: #4A7DBF;
+      border-color: #4A7DBF;
   }
 
 #get_started:hover {
-    background-color:#673AB7;
-    border-color: #673AB7 ;
+    background-color:#4A7DBF;
+    border-color: #4A7DBF ;
     color: white;
 }
 
@@ -41,10 +41,14 @@
 .im_buttons {
   font-size: 18px;
     font-weight: 700;
-    width: 200px;
+    width: 100%;
     height: 50px;
-    background-color: #673AB7;
+    background-color: #E9424C;
     border:none;
+}
+.blue-button {
+  background-color: white;
+  color: #4A7DBF;
 }
 .flag{
   display: inline-block;
@@ -59,13 +63,13 @@
 
 .im_buttons:hover {
     background-color: white;
-    border: 3px solid #673AB7;
-    color: #673AB7;
+    border: 3px solid #E9424C;
+    color: #E9424C;
     font-size: 18px;
 }
 
 .im_buttons:focus {
-    background-color: #673AB7 !important;
+    background-color: #E9424C !important;
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
@@ -118,24 +122,25 @@
 }
 /*КНОПКИ*/
 #read-more{
-  color: #673AB7;
-  border: 1px solid #673AB7;
+  color: #4A7DBF;
+  border: 1px solid #4A7DBF;
 }
 #read-more:hover{
   color: white;
   border: 1px solid white;
-  background-color: #673AB7;
+  background-color: #4A7DBF;
 }
 .go-to_button{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    border: 1px solid #0984e3;
-    background-color: #673AB7;
+    border: 1px solid #E9424C;
+    background-color: #E9424C;
 }
 .go-to_button:hover {
-    background-color: #8966C6;
+    background-color: #E9424C;
+    border: 1px solid #E9424C;
   }
   .btn-social{
     height: 45px;
@@ -190,15 +195,15 @@
  background-color: #EAEEF6;
 }
 .tab-link:hover i{
-  color: #673ab7;
+  color: #4A7DBF;
 }
 
 .tab-link.active{
   color: black;
-  border-bottom: 2px solid #673ab7;
+  border-bottom: 2px solid #4A7DBF;
 }
 .tab-link.active i{
-  color: #673ab7;
+  color: #4A7DBF;
 }
 /*FAQ*/
     .collapsible-link:hover{
@@ -208,7 +213,7 @@
        color: #3a3a3a;
     }
     .collapsible-link[aria-expanded='true']{
-       color: #0984e3;
+       color: #4A7DBF;
     }
     .collapsible-link[aria-expanded='true']>.faq-plus{
       display: none;
