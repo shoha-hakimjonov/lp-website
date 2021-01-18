@@ -1,6 +1,9 @@
 var app = {};
 app.translations = {
   ru: {
+    english_lang: "Английский",
+    russian_lang: "Русский",
+    tajik_lang: "Таджикский",
     home: "Главная",
     about: "О нас",
     parents: "Родителям (опекунам)",
@@ -101,6 +104,9 @@ app.translations = {
     e_second_tab_line: "Вспомогательные материалы",
   },
   tj: {
+    english_lang: "Aнглисӣ",
+    russian_lang: "Русӣ",
+    tajik_lang: "Тоҷикӣ",
     home: "Асосӣ",
     about: "Дар бораи мо",
     parents: "Барои волидайн (парасторон)",
@@ -216,7 +222,7 @@ function setLanguage(language) {
   var currentLanguage = getCookie('lang');
 
   app.lang = app.translations[currentLanguage] || app.translations.en;
-
+  changeLogo(currentLanguage);
   for (const property in app.lang) {
     // console.log(`${property}: ${app.lang[property]}`);
     if (document.getElementById(property) != null && currentLanguage != "en") {
@@ -247,5 +253,18 @@ function getCookie(name) {
 }
 function eraseCookie(name) {
   document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+function changeLogo(lang) {
+  var img = document.getElementById("logo_img");
+  if(lang == 'en'){
+    img.src = "img/logo_en.png";
+  }else if(lang=='ru'){
+    img.src = "img/logo_ru.png";
+  }else if(lang=='tj'){
+    img.src = "img/logo_tj.png";
+  }
+/*var src = document.getElementById("logo_a");
+src.appendChild(img);*/
 }
 
