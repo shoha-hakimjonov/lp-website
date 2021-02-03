@@ -18,6 +18,11 @@
       padding-right: 15px;
       color: black;
   }
+
+  .navbar-expand-lg .navbar-nav .nav-item :active {
+    color:#E9424C;
+  }
+
   #get_started {
       padding-left: 30px;
       padding-right: 30px;
