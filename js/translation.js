@@ -215,7 +215,7 @@ app.translations = {
     e_second_tab_line: "Маводи иловагӣ",
   }
 };
-setLanguage(getCookie('lang') || 'en');
+setLanguage(getCookie('lang') || 'tj');
 function setLanguage(language) {
   var x = getCookie('lang');
   if (x) {
